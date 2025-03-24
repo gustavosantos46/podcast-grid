@@ -1,0 +1,19 @@
+body {
+    display: grid;
+    grid-template-areas: /* seleciona qual vai ser a ordem dos grids da pagina, porem ainda é necessario especificar os elementos */
+    "aside header"
+    "aside main";
+    grid-template-columns: auto 1fr;
+}
+
+.cabecalho {
+    grid-area: header; /* especificando os elementos, ou seja, a classe utilizada será o header do grid */
+}
+
+.menu-lateral {
+    grid-area: aside;
+}
+
+.principal {
+    grid-area: main;
+}
